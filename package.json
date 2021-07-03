@@ -1,25 +1,43 @@
 {
-    "name": "sca-vscode",
-    "displayName": "SCA for VS Code",
-    "description": "Adds syntax highlighting and other language features for SuiteCommerce Advanced",
-    "version": "0.1.0",
-    "engines": {
-        "vscode": "^1.57.0"
-    },
-    "categories": [
-        "Programming Languages"
+  "name": "sca-vscode",
+  "displayName": "SCA for VS Code",
+  "description": "Adds syntax highlighting and other language features for SuiteCommerce Advanced",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.57.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "sca-tpl",
+        "aliases": ["SCA Template"],
+        "extensions": [".tpl"],
+        "configuration": "./configuration/tpl.json"
+      },
+      {
+        "id": "sca-ssp-html",
+        "aliases": ["SCA Server Page (HTML)"],
+        "extensions": [".ssp"],
+        "configuration": "./configuration/ssp-html.json"
+      }
     ],
-    "contributes": {
-        "languages": [{
-            "id": "sca-tpl",
-            "aliases": ["SCA Template"],
-            "extensions": [".tpl"],
-            "configuration": "./configuration/tpl.json"
-        }],
-        "grammars": [{
-            "language": "sca-tpl",
-            "scopeName": "text.html.handlebars.sca.tpl",
-            "path": "./syntaxes/tpl.tmLanguage.json"
-        }]
-    }
+    "grammars": [
+      {
+        "language": "sca-tpl",
+        "scopeName": "text.html.handlebars.sca.tpl",
+        "path": "./syntaxes/tpl.tmLanguage.json"
+      },
+      {
+        "language": "sca-ssp-html",
+        "scopeName": "text.html.sca.ssp",
+        "path": "./syntaxes/ssp-html.tmLanguage.json",
+        "embeddedLanguages": {
+          "source.js.embedded.sca.ssp": "javascript"
+        }
+      }
+    ]
+  }
 }
