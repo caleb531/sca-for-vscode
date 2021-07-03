@@ -1,0 +1,25 @@
+{
+    "name": "sca-vscode",
+    "displayName": "SCA for VS Code",
+    "description": "Adds syntax highlighting and other language features for SuiteCommerce Advanced",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.57.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "sca-tpl",
+            "aliases": ["SCA Template"],
+            "extensions": [".tpl"],
+            "configuration": "./configuration/tpl.json"
+        }],
+        "grammars": [{
+            "language": "sca-tpl",
+            "scopeName": "text.html.handlebars.sca.tpl",
+            "path": "./syntaxes/tpl.tmLanguage.json"
+        }]
+    }
+}
