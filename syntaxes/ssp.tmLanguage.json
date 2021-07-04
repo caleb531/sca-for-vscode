@@ -108,7 +108,6 @@
 			"begin":"(<[%?](?:(?!php))[%_=-]?)(?!(\\s*\\*\/))(((?!([_-]?[%?]>)).)+)(?=([_-]?[%?]>))",
 			"beginCaptures": {
 				"0": {
-					"contentName":"source.js",
 					"name": "meta.embedded.*"
 				},
 				"1": {
@@ -116,7 +115,6 @@
 				},
 				"3": {
 					"name": "meta.embedded.sca.ssp",
-					"contentName": "source.js",
 					"patterns":[
 						{
 							"include":"source.js"
@@ -144,7 +142,6 @@
 				},
 				"3": {
 					"name": "meta.embedded.sca.ssp",
-					"contentName": "source.js",
 					"patterns":[
 						{
 							"include":"source.js"
