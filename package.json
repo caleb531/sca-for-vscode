@@ -33,12 +33,12 @@
       {
         "language": "sca-ssp",
 				"scopeName": "text.html.sca.ssp",
-				"path": "./syntaxes/ejs.tmLanguage.json",
+				"path": "./syntaxes/ssp.tmLanguage.json",
 				"injectTo": [
 					"text.html"
 				],
 				"embeddedLanguages": {
-					"meta.embedded.block.sca.ssp": "ejs",
+					"meta.embedded.block.sca.ssp": "sca-ssp",
 					"meta.embedded.block.javascript": "source.js"
 				}
       }

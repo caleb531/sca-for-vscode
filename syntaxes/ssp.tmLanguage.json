@@ -1,5 +1,5 @@
 {
-	"name": "Embedded Javascript",
+	"name": "SCA Server Page",
 	"scopeName": "text.html.sca.ssp",
 	"injectionSelector": "L:text.html",
 	"patterns": [
