@@ -1,4 +1,5 @@
 {
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "SCA Server Page",
 	"scopeName": "source.sca.ssp",
 	"injectionSelector": "L:text.html",
