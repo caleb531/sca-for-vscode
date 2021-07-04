@@ -107,9 +107,6 @@
 			"name": "meta.tag.metadata.script.sca.ssp",
 			"begin":"(<[%?](?:(?!php))[%_=-]?)(?!(\\s*\\*\/))(((?!([_-]?[%?]>)).)+)(?=([_-]?[%?]>))",
 			"beginCaptures": {
-				"0": {
-					"name": "meta.embedded.*"
-				},
 				"1": {
 					"name": "keyword.control.directive.sca.ssp"
 				},
