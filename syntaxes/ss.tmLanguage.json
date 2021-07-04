@@ -1,7 +1,7 @@
 {
-	"name": "SCA Service",
-	"scopeName": "source.js.sca.ss",
-	"patterns": [
+  "name": "SCA Service",
+  "scopeName": "source.js.sca.ss",
+  "patterns": [
     {
       "include": "source.js"
     }

@@ -1,7 +1,7 @@
 {
-	"name": "SCA Server Page (JavaScript)",
-	"scopeName": "source.js.sca.ssp",
-	"patterns": [
+  "name": "SCA Server Page (JavaScript)",
+  "scopeName": "source.js.sca.ssp",
+  "patterns": [
     {
       "include": "source.js"
     }

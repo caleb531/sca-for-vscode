@@ -1,7 +1,7 @@
 {
-	"name": "SCA TBA File",
-	"scopeName": "source.json.sca.nstba",
-	"patterns": [
+  "name": "SCA TBA File",
+  "scopeName": "source.json.sca.nstba",
+  "patterns": [
     {
       "include": "source.json"
     }
