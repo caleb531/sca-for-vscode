@@ -22,6 +22,12 @@
         "aliases": ["SCA Server Page (HTML)"],
         "extensions": [".ssp"],
         "configuration": "./configuration/ssp-html.json"
+      },
+      {
+        "id": "sca-ssp-javascript",
+        "aliases": ["SCA Server Page (JavaScript)"],
+        "extensions": [".environment.ssp"],
+        "configuration": "./configuration/ssp-javascript.json"
       }
     ],
     "grammars": [
@@ -36,10 +42,16 @@
         "path": "./syntaxes/ssp-html.tmLanguage.json"
       },
       {
+        "language": "sca-ssp-javascript",
+        "scopeName": "source.js.sca.ssp",
+        "path": "./syntaxes/ssp-javascript.tmLanguage.json"
+      },
+      {
         "scopeName": "source.sca.ssp",
         "path": "./syntaxes/ssp.tmLanguage.json",
         "injectTo": [
-          "text.html.sca.ssp"
+          "text.html.sca.ssp",
+          "source.js.sca.ssp"
         ],
         "embeddedLanguages": {
           "source.js": "javascript"
