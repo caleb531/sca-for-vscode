@@ -18,10 +18,10 @@
         "configuration": "./configuration/tpl.json"
       },
       {
-        "id": "sca-ssp-html",
-        "aliases": ["SCA Server Page (HTML)"],
+        "id": "sca-ssp",
+        "aliases": ["SCA Server Page"],
         "extensions": [".ssp"],
-        "configuration": "./configuration/ssp-html.json"
+        "configuration": "./configuration/ssp.json"
       }
     ],
     "grammars": [
@@ -31,12 +31,16 @@
         "path": "./syntaxes/tpl.tmLanguage.json"
       },
       {
-        "language": "sca-ssp-html",
-        "scopeName": "text.html.sca.ssp",
-        "path": "./syntaxes/ssp-html.tmLanguage.json",
-        "embeddedLanguages": {
-          "source.js.embedded.sca.ssp": "javascript"
-        }
+        "language": "sca-ssp",
+				"scopeName": "text.html.ejs",
+				"path": "./syntaxes/ejs.tmLanguage.json",
+				"injectTo": [
+					"text.html"
+				],
+				"embeddedLanguages": {
+					"meta.embedded.block.ejs": "ejs",
+					"meta.embedded.block.javascript": "source.js"
+				}
       }
     ]
   }
