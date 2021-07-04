@@ -32,7 +32,7 @@
       },
       {
         "language": "sca-ssp",
-				"scopeName": "text.html.sca.ssp",
+				"scopeName": "source.sca.ssp",
 				"path": "./syntaxes/ssp.tmLanguage.json",
 				"injectTo": [
 					"text.html"

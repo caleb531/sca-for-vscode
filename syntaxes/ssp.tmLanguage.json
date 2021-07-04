@@ -1,6 +1,6 @@
 {
 	"name": "SCA Server Page",
-	"scopeName": "text.html.sca.ssp",
+	"scopeName": "source.sca.ssp",
 	"injectionSelector": "L:text.html",
 	"patterns": [
 		{
@@ -97,7 +97,7 @@
 					}
 				},
 				{
-					"include":"text.html.sca.ssp"
+					"include":"source.sca.ssp"
 				}
 			]
 		},
