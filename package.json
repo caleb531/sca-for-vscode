@@ -36,15 +36,15 @@
         "path": "./syntaxes/ssp-html.tmLanguage.json"
       },
       {
-				"scopeName": "source.sca.ssp",
-				"path": "./syntaxes/ssp.tmLanguage.json",
-				"injectTo": [
-					"text.html.sca.ssp"
-				],
-				"embeddedLanguages": {
-					"meta.embedded.block.sca.ssp": "sca-ssp",
-					"meta.embedded.block.javascript": "javascript"
-				}
+        "scopeName": "source.sca.ssp",
+        "path": "./syntaxes/ssp.tmLanguage.json",
+        "injectTo": [
+          "text.html.sca.ssp"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.sca.ssp": "sca-ssp",
+          "meta.embedded.block.javascript": "javascript"
+        }
       }
     ]
   }
