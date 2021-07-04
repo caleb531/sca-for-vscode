@@ -1,6 +1,6 @@
 {
 	"name": "Embedded Javascript",
-	"scopeName": "text.html.ejs",
+	"scopeName": "text.html.sca.ssp",
 	"injectionSelector": "L:text.html",
 	"patterns": [
 		{
@@ -13,10 +13,10 @@
 			"include":"#tag-section-comment"
 		},
 		{
-			"include":"#tag-ejs-single-line"
+			"include":"#tag-ssp-single-line"
 		},
 		{
-			"include":"#tag-ejs-multi-line"
+			"include":"#tag-ssp-multi-line"
 		}
 	],
 	"repository": {
@@ -24,16 +24,16 @@
 			"begin": "<[%?]#",
 			"beginCaptures": {
 				"0": {
-					"name": "punctuation.definition.comment.ejs"
+					"name": "punctuation.definition.comment.sca.ssp"
 				}
 			},
 			"end": "[%?]>",
 			"endCaptures": {
 				"0": {
-					"name": "punctuation.definition.comment.ejs"
+					"name": "punctuation.definition.comment.sca.ssp"
 				}
 			},
-			"name": "comment.block.ejs"
+			"name": "comment.block.sca.ssp"
 		},
 		"tag-single-line-section-comment": {
 			"begin": "(<[%?](?:(?!php))[%_=-]?)\\s*((\/\\*)(.*)(\\*\/))(?=(\\s*([%?]>)))",
@@ -42,13 +42,13 @@
 					"name": "keyword.operator.relational.js"
 				},
 				"3": {
-					"name": "punctuation.definition.comment.ejs"
+					"name": "punctuation.definition.comment.sca.ssp"
 				},
 				"5": {
-					"name": "punctuation.definition.comment.ejs"
+					"name": "punctuation.definition.comment.sca.ssp"
 				},
 				"2": {
-					"name": "comment.block.ejs"
+					"name": "comment.block.sca.ssp"
 				}
 			},
 			"end": "([%?]>)",
@@ -57,11 +57,11 @@
 					"name": "keyword.operator.relational.js"
 				}
 			},
-			"contentName": "comment.block.ejs",
-			"name":"meta.block.single.comment.ejs"
+			"contentName": "comment.block.sca.ssp",
+			"name":"meta.block.single.comment.sca.ssp"
 		},
 		"tag-section-comment": {
-			"name":"comment.block.ejs",
+			"name":"comment.block.sca.ssp",
 			"begin":"(<[%?](?:(?!php)))\\s*((?=(\/\\*)))",
 			"beginCaptures": {
 				"1": {
@@ -71,7 +71,7 @@
 			"end": "(\\*\/)\\s*([%?]>)",
 			"endCaptures": {
 				"1": {
-					"name": "punctuation.definition.comment.ejs"
+					"name": "punctuation.definition.comment.sca.ssp"
 				},
 				"2": {
 					"name": "keyword.operator.relational.js"
@@ -79,7 +79,7 @@
 			},
 			"patterns":[
 				{
-					"name":"ejs-end-tag",
+					"name":"ssp-end-tag",
 					"match":"([%?]>)",
 					"captures":{
 						"1":{
@@ -88,7 +88,7 @@
 					}
 				},
 				{
-					"name":"ejs-begin-tag",
+					"name":"ssp-begin-tag",
 					"match":"(<[%?](?:(?!php)))",
 					"captures":{
 						"1":{
@@ -97,13 +97,13 @@
 					}
 				},
 				{
-					"include":"text.html.ejs"
+					"include":"text.html.sca.ssp"
 				}
 			]
 		},
-		"tag-ejs-single-line": {
+		"tag-ssp-single-line": {
 
-			"name": "meta.tag.metadata.script.ejs",
+			"name": "meta.tag.metadata.script.sca.ssp",
 			"begin":"(<[%?](?:(?!php))[%_=-]?)(?!(\\s*\\*\/))(((?!([_-]?[%?]>)).)+)(?=([_-]?[%?]>))",
 			"beginCaptures": {
 				"0": {
@@ -114,7 +114,7 @@
 					"name": "keyword.operator.relational.js"
 				},
 				"3": {
-					"name": "meta.embedded.ejs",
+					"name": "meta.embedded.sca.ssp",
 					"contentName": "source.js",
 					"patterns":[
 						{
@@ -133,16 +133,16 @@
 				}
 			}
 		},
-		"tag-ejs-multi-line": {
+		"tag-ssp-multi-line": {
 			"contentName":"source.js",
-			"name": "meta.block.ejs",
+			"name": "meta.block.sca.ssp",
 			"begin":"(<[%?](?:(?!php))[%_=-]?)(?!(\\s*\\*\/))",
 			"beginCaptures": {
 				"1": {
 					"name": "keyword.operator.relational.js"
 				},
 				"3": {
-					"name": "meta.embedded.ejs",
+					"name": "meta.embedded.sca.ssp",
 					"contentName": "source.js",
 					"patterns":[
 						{
