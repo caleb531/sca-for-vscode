@@ -1,6 +1,6 @@
-# sca-vscode README
+# sca-for-vscode README
 
-This is the README for your extension "sca-vscode". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "sca-for-vscode". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
