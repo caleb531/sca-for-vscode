@@ -57,6 +57,12 @@
           "source.js": "javascript"
         }
       }
+    ],
+    "snippets": [
+      {
+        "language": "sca-tpl",
+        "path": "./snippets/tpl.json"
+      }
     ]
   }
 }

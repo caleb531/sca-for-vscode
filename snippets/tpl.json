@@ -1,0 +1,38 @@
+{
+  "tpl if": {
+    "prefix": "if",
+    "body": ["{{#if ${1:condition}}}\n\t$2\n{{/if}}"]
+  },
+  "tpl ifelse": {
+    "prefix": "ifelse",
+    "body": ["{{#if ${1:condition}}}\n\t$2\n{{else}}\n\t$3\n{{/if}}"]
+  },
+  "tpl ifelseif": {
+    "prefix": "ifelseif",
+    "body": ["{{#if ${1:condition}}}\n\t$2\n{{else if ${3:condition}}}\n\t$4\n{{/if}}"]
+  },
+  "tpl ifelseifelse": {
+    "prefix": "ifelseifelse",
+    "body": ["{{#if ${1:condition}}}\n\t$2\n{{else if ${3:condition}}}\n\t$4\n{{else}}\n\t$5\n{{/if}}"]
+  },
+  "tpl unless": {
+    "prefix": "unless",
+    "body": ["{{#unless ${1:condition}}}\n\t$2\n{{/unless}}"]
+  },
+  "tpl each": {
+    "prefix": "each",
+    "body": ["{{#each ${1:object}}}\n\t$2\n{{/each}}"]
+  },
+  "tpl with": {
+    "prefix": "with",
+    "body": ["{{#with ${1:object}}}\n\t$2\n{{/with}}"]
+  },
+  "tpl ifEquals": {
+    "prefix": "ifequals",
+    "body": ["{{#ifEquals ${1:object} ${2:value}}}\n\t$3\n{{/ifEquals}}"]
+  },
+  "tpl unlessEquals": {
+    "prefix": "unlessequals",
+    "body": ["{{#unlessEquals ${1:object} ${2:value}}}\n\t$3\n{{/unlessEquals}}"]
+  }
+}
