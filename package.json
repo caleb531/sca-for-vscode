@@ -34,6 +34,12 @@
         "aliases": ["SCA Service"],
         "extensions": [".ss"],
         "configuration": "./configuration/ss.json"
+      },
+      {
+        "id": "sca-nstba",
+        "aliases": ["SCA TBA File"],
+        "extensions": [".nstba"],
+        "configuration": "./configuration/nstba.json"
       }
     ],
     "grammars": [
@@ -67,6 +73,11 @@
         "language": "sca-service",
         "scopeName": "source.js.sca.ss",
         "path": "./syntaxes/ss.tmLanguage.json"
+      },
+      {
+        "language": "sca-nstba",
+        "scopeName": "source.json.sca.nstba",
+        "path": "./syntaxes/nstba.tmLanguage.json"
       }
     ],
     "snippets": [
