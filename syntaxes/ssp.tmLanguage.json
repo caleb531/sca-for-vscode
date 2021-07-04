@@ -40,7 +40,7 @@
 			"begin": "(<[%?](?:(?!php))[%_=-]?)\\s*((\/\\*)(.*)(\\*\/))(?=(\\s*([%?]>)))",
 			"captures": {
 				"1": {
-					"name": "keyword.operator.relational.js"
+					"name": "keyword.operator.relational.sca.ssp"
 				},
 				"3": {
 					"name": "punctuation.definition.comment.sca.ssp"
@@ -55,7 +55,7 @@
 			"end": "([%?]>)",
 			"endCaptures": {
 				"1": {
-					"name": "keyword.operator.relational.js"
+					"name": "keyword.operator.relational.sca.ssp"
 				}
 			},
 			"contentName": "comment.block.sca.ssp",
@@ -66,7 +66,7 @@
 			"begin":"(<[%?](?:(?!php)))\\s*((?=(\/\\*)))",
 			"beginCaptures": {
 				"1": {
-					"name": "keyword.operator.relational.js"
+					"name": "keyword.operator.relational.sca.ssp"
 				}
 			},
 			"end": "(\\*\/)\\s*([%?]>)",
@@ -75,7 +75,7 @@
 					"name": "punctuation.definition.comment.sca.ssp"
 				},
 				"2": {
-					"name": "keyword.operator.relational.js"
+					"name": "keyword.operator.relational.sca.ssp"
 				}
 			},
 			"patterns":[
@@ -84,7 +84,7 @@
 					"match":"([%?]>)",
 					"captures":{
 						"1":{
-							"name":"keyword.operator.relational.js"
+							"name":"keyword.operator.relational.sca.ssp"
 						}
 					}
 				},
@@ -93,7 +93,7 @@
 					"match":"(<[%?](?:(?!php)))",
 					"captures":{
 						"1":{
-							"name":"keyword.operator.relational.js"
+							"name":"keyword.operator.relational.sca.ssp"
 						}
 					}
 				},
@@ -111,7 +111,7 @@
 					"name": "meta.embedded.*"
 				},
 				"1": {
-					"name": "keyword.operator.relational.js"
+					"name": "keyword.operator.relational.sca.ssp"
 				},
 				"3": {
 					"name": "meta.embedded.sca.ssp",
@@ -122,13 +122,13 @@
 					]
 				},
 				"6": {
-					"name": "keyword.operator.relational.js"
+					"name": "keyword.operator.relational.sca.ssp"
 				}
 			},
 			"end": "(([_-]?[%?]>))",
 			"endCaptures": {
 				"1": {
-					"name": "keyword.operator.relational.js"
+					"name": "keyword.operator.relational.sca.ssp"
 				}
 			}
 		},
@@ -138,7 +138,7 @@
 			"begin":"(<[%?](?:(?!php))[%_=-]?)(?!(\\s*\\*\/))",
 			"beginCaptures": {
 				"1": {
-					"name": "keyword.operator.relational.js"
+					"name": "keyword.operator.relational.sca.ssp"
 				},
 				"3": {
 					"name": "meta.embedded.sca.ssp",
@@ -152,7 +152,7 @@
 			"end": "(([_-]?[%?]>))",
 			"endCaptures": {
 				"1": {
-					"name": "keyword.operator.relational.js"
+					"name": "keyword.operator.relational.sca.ssp"
 				}
 			},
 			"patterns":[
