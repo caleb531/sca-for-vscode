@@ -28,6 +28,12 @@
         "aliases": ["SCA Server Page (JavaScript)"],
         "extensions": [".environment.ssp"],
         "configuration": "./configuration/ssp-javascript.json"
+      },
+      {
+        "id": "sca-service",
+        "aliases": ["SCA Service"],
+        "extensions": [".ss"],
+        "configuration": "./configuration/ss.json"
       }
     ],
     "grammars": [
@@ -56,6 +62,11 @@
         "embeddedLanguages": {
           "source.js": "javascript"
         }
+      },
+      {
+        "language": "sca-service",
+        "scopeName": "source.js.sca.ss",
+        "path": "./syntaxes/ss.tmLanguage.json"
       }
     ],
     "snippets": [
