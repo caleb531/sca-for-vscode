@@ -1,38 +1,82 @@
 {
   "tpl if": {
     "prefix": "if",
-    "body": ["{{#if ${1:condition}}}\n\t$2\n{{/if}}"]
+    "body": [
+      "{{#if ${1:condition}}}",
+      "\t$2",
+      "{{/if}}"
+    ]
   },
   "tpl ifelse": {
     "prefix": "ifelse",
-    "body": ["{{#if ${1:condition}}}\n\t$2\n{{else}}\n\t$3\n{{/if}}"]
+    "body": [
+      "{{#if ${1:condition}}}",
+      "\t$2",
+      "{{else}}",
+      "\t$3",
+      "{{/if}}"
+    ]
   },
   "tpl ifelseif": {
     "prefix": "ifelseif",
-    "body": ["{{#if ${1:condition}}}\n\t$2\n{{else if ${3:condition}}}\n\t$4\n{{/if}}"]
+    "body": [
+      "{{#if ${1:condition}}}",
+      "\t$2",
+      "{{else if ${3:condition}}}",
+      "\t$4",
+      "{{/if}}"
+    ]
   },
   "tpl ifelseifelse": {
     "prefix": "ifelseifelse",
-    "body": ["{{#if ${1:condition}}}\n\t$2\n{{else if ${3:condition}}}\n\t$4\n{{else}}\n\t$5\n{{/if}}"]
+    "body": [
+      "{{#if ${1:condition}}}",
+      "\t$2",
+      "{{else if ${3:condition}}}",
+      "\t$4",
+      "{{else}}",
+      "\t$5",
+      "{{/if}}"
+    ]
   },
   "tpl unless": {
     "prefix": "unless",
-    "body": ["{{#unless ${1:condition}}}\n\t$2\n{{/unless}}"]
+    "body": [
+      "{{#unless ${1:condition}}}",
+      "\t$2",
+      "{{/unless}}"
+    ]
   },
   "tpl each": {
     "prefix": "each",
-    "body": ["{{#each ${1:object}}}\n\t$2\n{{/each}}"]
+    "body": [
+      "{{#each ${1:object}}}",
+      "\t$2",
+      "{{/each}}"
+    ]
   },
   "tpl with": {
     "prefix": "with",
-    "body": ["{{#with ${1:object}}}\n\t$2\n{{/with}}"]
+    "body": [
+      "{{#with ${1:object}}}",
+      "\t$2",
+      "{{/with}}"
+    ]
   },
   "tpl ifEquals": {
     "prefix": "ifequals",
-    "body": ["{{#ifEquals ${1:object} ${2:value}}}\n\t$3\n{{/ifEquals}}"]
+    "body": [
+      "{{#ifEquals ${1:object} ${2:value}}}",
+      "\t$3",
+      "{{/ifEquals}}"
+    ]
   },
   "tpl unlessEquals": {
     "prefix": "unlessequals",
-    "body": ["{{#unlessEquals ${1:object} ${2:value}}}\n\t$3\n{{/unlessEquals}}"]
+    "body": [
+      "{{#unlessEquals ${1:object} ${2:value}}}",
+      "\t$3",
+      "{{/unlessEquals}}"
+    ]
   }
 }
