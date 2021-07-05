@@ -7,6 +7,10 @@
   "engines": {
     "vscode": "^1.57.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caleb531/sca-for-vscode.git"
+  },
   "categories": [
     "Programming Languages",
     "Snippets"
