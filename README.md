@@ -12,7 +12,7 @@ pull request to add snippets, make grammar tweaks, etc.
 ## Supported File Types
 
 - SCA Templates (`*.tpl`)
-- SuiteScript Server Pages (`*.ssp`)
+- SuiteScript Server Pages (`*.ssp`, `merchzone_default.txt`)
 - SuiteScript Services (`*.ss`)
 - Token-Based Authentication Files (`.nstba`)
 

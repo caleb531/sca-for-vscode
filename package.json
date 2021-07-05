@@ -27,7 +27,7 @@
       {
         "id": "sca-ssp-html",
         "aliases": ["SCA Server Page (HTML)"],
-        "extensions": [".ssp"],
+        "extensions": [".ssp", "merchzone.txt", "merchzone_default.txt"],
         "configuration": "./configuration/ssp-html.json"
       },
       {
