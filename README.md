@@ -18,4 +18,4 @@ pull request to add snippets, make grammar tweaks, etc.
 
 ## Installation
 
-You can install sca-for-vscode through the VS Code Extensions screen. There are no settings to configure.
+You can install sca-for-vscode through the VS Code Extensions UI. There are no settings to configure.
