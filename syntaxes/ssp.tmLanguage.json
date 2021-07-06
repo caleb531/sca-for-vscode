@@ -5,15 +5,6 @@
   "injectionSelector": "L:text.html.sca.ssp, L:source.js.sca.ssp",
   "patterns": [
     {
-      "include": "#tag-block-comment"
-    },
-    {
-      "include": "#tag-single-line-section-comment"
-    },
-    {
-      "include":"#tag-section-comment"
-    },
-    {
       "include":"#tag-ssp-single-line"
     },
     {
@@ -21,87 +12,6 @@
     }
   ],
   "repository": {
-    "tag-block-comment": {
-      "begin": "<[%?]#",
-      "beginCaptures": {
-        "0": {
-          "name": "punctuation.definition.comment.sca.ssp"
-        }
-      },
-      "end": "[%?]>",
-      "endCaptures": {
-        "0": {
-          "name": "punctuation.definition.comment.sca.ssp"
-        }
-      },
-      "name": "comment.block.sca.ssp"
-    },
-    "tag-single-line-section-comment": {
-      "begin": "(<[%?](?:(?!php))[%_=-]?)\\s*((\/\\*)(.*)(\\*\/))(?=(\\s*([%?]>)))",
-      "captures": {
-        "1": {
-          "name": "keyword.control.directive.sca.ssp"
-        },
-        "3": {
-          "name": "punctuation.definition.comment.sca.ssp"
-        },
-        "5": {
-          "name": "punctuation.definition.comment.sca.ssp"
-        },
-        "2": {
-          "name": "comment.block.sca.ssp"
-        }
-      },
-      "end": "([%?]>)",
-      "endCaptures": {
-        "1": {
-          "name": "keyword.control.directive.sca.ssp"
-        }
-      },
-      "contentName": "comment.block.sca.ssp",
-      "name":"meta.block.single.comment.sca.ssp"
-    },
-    "tag-section-comment": {
-      "name":"comment.block.sca.ssp",
-      "begin":"(<[%?](?:(?!php)))\\s*((?=(\/\\*)))",
-      "beginCaptures": {
-        "1": {
-          "name": "keyword.control.directive.sca.ssp"
-        }
-      },
-      "end": "(\\*\/)\\s*([%?]>)",
-      "endCaptures": {
-        "1": {
-          "name": "punctuation.definition.comment.sca.ssp"
-        },
-        "2": {
-          "name": "keyword.control.directive.sca.ssp"
-        }
-      },
-      "patterns":[
-        {
-          "name":"ssp-end-tag",
-          "match":"([%?]>)",
-          "captures":{
-            "1":{
-              "name":"keyword.control.directive.sca.ssp"
-            }
-          }
-        },
-        {
-          "name":"ssp-begin-tag",
-          "match":"(<[%?](?:(?!php)))",
-          "captures":{
-            "1":{
-              "name":"keyword.control.directive.sca.ssp"
-            }
-          }
-        },
-        {
-          "include":"source.sca.ssp"
-        }
-      ]
-    },
     "tag-ssp-single-line": {
 
       "name": "meta.tag.metadata.script.sca.ssp",
