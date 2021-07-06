@@ -16,6 +16,7 @@
     "Programming Languages",
     "Snippets"
   ],
+  "keywords": ["suitecommerce", "suitecommerce advanced", "netsuite", "suitescript"],
   "contributes": {
     "languages": [
       {
