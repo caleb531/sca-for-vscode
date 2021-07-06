@@ -15,7 +15,7 @@
     "tag-ssp-single-line": {
 
       "name": "meta.tag.metadata.script.sca.ssp",
-      "begin":"(<[%?](?:(?!php))[%_=-]?)(?!(\\s*\\*\/))(((?!([_-]?[%?]>)).)+)(?=([_-]?[%?]>))",
+      "begin":"(<%=?)(?!(\\s*\\*\/))(((?!%>).)+)(?=%>)",
       "beginCaptures": {
         "1": {
           "name": "keyword.control.directive.sca.ssp"
@@ -32,7 +32,7 @@
           "name": "keyword.control.directive.sca.ssp"
         }
       },
-      "end": "(([_-]?[%?]>))",
+      "end": "(%>)",
       "endCaptures": {
         "1": {
           "name": "keyword.control.directive.sca.ssp"
@@ -42,7 +42,7 @@
     "tag-ssp-multi-line": {
       "contentName":"source.js",
       "name": "meta.block.sca.ssp",
-      "begin":"(<[%?](?:(?!php))[%_=-]?)(?!(\\s*\\*\/))",
+      "begin":"(<%=?)(?!(\\s*\\*\/))",
       "beginCaptures": {
         "1": {
           "name": "keyword.control.directive.sca.ssp"
@@ -56,7 +56,7 @@
           ]
         }
       },
-      "end": "(([_-]?[%?]>))",
+      "end": "(%>)",
       "endCaptures": {
         "1": {
           "name": "keyword.control.directive.sca.ssp"
