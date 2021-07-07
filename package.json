@@ -38,16 +38,12 @@
         "configuration": "./configuration/ssp-javascript.json"
       },
       {
-        "id": "sca-service",
-        "aliases": ["SCA Service"],
-        "extensions": [".ss"],
-        "configuration": "./configuration/ss.json"
+        "id": "javascript",
+        "extensions": [".ss"]
       },
       {
-        "id": "sca-nstba",
-        "aliases": ["SCA TBA File"],
-        "extensions": [".nstba"],
-        "configuration": "./configuration/nstba.json"
+        "id": "json",
+        "extensions": [".nstba"]
       }
     ],
     "grammars": [
@@ -76,16 +72,6 @@
         "embeddedLanguages": {
           "source.js": "javascript"
         }
-      },
-      {
-        "language": "sca-service",
-        "scopeName": "source.js.sca.ss",
-        "path": "./syntaxes/ss.tmLanguage.json"
-      },
-      {
-        "language": "sca-nstba",
-        "scopeName": "source.json.sca.nstba",
-        "path": "./syntaxes/nstba.tmLanguage.json"
       }
     ],
     "snippets": [
