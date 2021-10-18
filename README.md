@@ -1,4 +1,4 @@
-# sca-for-vscode
+# SuiteCommerce Advanced for VS Code
 
 *Copyright 2021 Caleb Evans*  
 *Released under the MIT license*

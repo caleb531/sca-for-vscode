@@ -1,6 +1,6 @@
 {
   "name": "sca-for-vscode",
-  "displayName": "SCA for VS Code",
+  "displayName": "SuiteCommerce Advanced for VS Code",
   "description": "Adds syntax highlighting and other language features for SuiteCommerce Advanced",
   "version": "2.0.1",
   "publisher": "caleb531",
