@@ -20,10 +20,8 @@
   "contributes": {
     "languages": [
       {
-        "id": "sca-template",
-        "aliases": ["SCA Template"],
-        "extensions": [".tpl"],
-        "configuration": "./configuration/tpl.json"
+        "id": "handlebars",
+        "extensions": [".tpl"]
       },
       {
         "id": "sca-ssp-html",
@@ -48,11 +46,6 @@
     ],
     "grammars": [
       {
-        "language": "sca-template",
-        "scopeName": "text.html.handlebars.sca.tpl",
-        "path": "./syntaxes/tpl.tmLanguage.json"
-      },
-      {
         "language": "sca-ssp-html",
         "scopeName": "text.html.sca.ssp",
         "path": "./syntaxes/ssp-html.tmLanguage.json"
@@ -76,7 +69,7 @@
     ],
     "snippets": [
       {
-        "language": "sca-template",
+        "language": "handlebars",
         "path": "./snippets/tpl.json"
       }
     ]
