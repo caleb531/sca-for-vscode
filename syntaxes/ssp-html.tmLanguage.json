@@ -1,9 +1,0 @@
-{
-  "name": "SCA Server Page (HTML)",
-  "scopeName": "text.html.sca.ssp",
-  "patterns": [
-    {
-      "include": "text.html.derivative"
-    }
-  ]
-}

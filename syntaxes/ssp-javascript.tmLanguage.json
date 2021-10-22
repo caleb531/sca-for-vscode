@@ -1,9 +1,0 @@
-{
-  "name": "SCA Server Page (JavaScript)",
-  "scopeName": "source.js.sca.ssp",
-  "patterns": [
-    {
-      "include": "source.js"
-    }
-  ]
-}
