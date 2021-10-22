@@ -45,7 +45,7 @@
           "source.js"
         ],
         "embeddedLanguages": {
-          "source.js": "javascript"
+          "meta.embedded.sca.ssp": "javascript"
         }
       }
     ],
